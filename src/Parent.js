@@ -4,17 +4,16 @@ import TemperatureInput from "./Child";
 import { UserProvider } from "./useContextex"; 
 
 function Calculator() {
-    const [temperature, setTemperature] = useState(''); // State lives in the parent
+    const [temperature, setTemperature] = useState(''); 
     const user =useContext(UserProvider);
     console.log("user",user)
   
     const handleTemperatureChange = (newTemperature) => {
-      setTemperature(newTemperature); // Parent updates the state
+      setTemperature(newTemperature); 
     };
   
     return (
       <div>
-        {/* Pass the state and handler to child components */}
         <TemperatureInput
           temperature={temperature}
           onTemperatureChange={handleTemperatureChange}

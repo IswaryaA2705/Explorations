@@ -1,6 +1,5 @@
 import { createContext } from "react";
 
-// Create the context
 const UserContext = createContext();
 
 function UserProvider({ children }) {

@@ -11,21 +11,18 @@ class Person {
     }
 }
 
-// Inheriting from the Person class (Employee)
 class Employee extends Person {
     constructor(firstName, lastName, age, position) {
-        super(firstName, lastName, age); // Calling parent constructor
+        super(firstName, lastName, age);
         this.position = position;
     }
 
-    // Method specific to Employee
     getPosition() {
         return this.position;
     }
 }
 
-// Creating an instance of Employee
 let employee = new Employee("Jane", "Smith", 28, "Software Developer");
 
-console.log(employee.getFullName()); // Output: Jane Smith
-console.log(employee.getPosition()); // Output: Software Developer
+console.log(employee.getFullName()); 
+console.log(employee.getPosition()); 

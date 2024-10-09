@@ -12,7 +12,6 @@
     console.log("str[1]",personC[0])
     const quote = "everything is possible";
     console.log("split by ",quote.split(" "))
-    //Template Literals
     const para = `Hi everyone,
      How are you?,${personC}`;
     console.log("para",para)
